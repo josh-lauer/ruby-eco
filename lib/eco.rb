@@ -1,9 +1,14 @@
 require "coffee_script"
-require "eco/source"
 require "execjs"
 
 module Eco
   module Source
+    VERSION = "1.2.0"
+
+    def self.bundled_path
+      File.expand_path("../eco.js", __FILE__)
+    end
+
     def self.path
       @path ||= ENV["ECO_SOURCE_PATH"] || bundled_path
     end

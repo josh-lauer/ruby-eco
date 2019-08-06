@@ -14,11 +14,11 @@ Gem::Specification.new do |s|
 
   s.files = [
     "lib/eco.rb",
+    "lib/eco.js",
     "LICENSE",
     "README.md"
   ]
 
   s.add_dependency "coffee-script"
-  s.add_dependency "eco-source"
   s.add_dependency "execjs"
 end
